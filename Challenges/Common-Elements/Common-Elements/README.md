@@ -4,4 +4,4 @@
 ![Common-Elements-WhiteBoard](assets/Common-ElementsWB.jpg) 
 
 ## Output image :
-![Common-Elements-Output](assets/Common-Elements-Output.png)
+![Common-Elements-Output](assets/Common-Elements-Output.png) 
