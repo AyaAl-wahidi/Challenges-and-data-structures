@@ -38,5 +38,12 @@
 ---
 
 
-#### Challenge 6: Find Common Elements in Two Arrays
+#### Challenge 6 - A : Find Common Elements in Two Arrays
 [**Go to Challenge README File**](Challenges/Common-Elements/Common-Elements/README.md)
+
+---
+
+
+#### Challenge 6 - B : Reverse Words
+[**Go to Challenge README File**](Challenges/Reverse-Words/Reverse-Words/assets/Reverse-Words-WB.jpg)
+
