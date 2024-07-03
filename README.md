@@ -45,5 +45,5 @@
 
 
 #### Challenge 6 - B : Reverse Words
-[**Go to Challenge README File**](Challenges/Reverse-Words/Reverse-Words/assets/Reverse-Words-WB.jpg)
+[**Go to Challenge README File**](Challenges/Reverse-Words/Reverse-Words/README.md)
 
