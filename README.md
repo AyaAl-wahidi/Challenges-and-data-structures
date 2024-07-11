@@ -51,5 +51,5 @@
 
 
 #### Challenge 7 : Linked List Implementation
-[**Go to Challenge README File**](Data Structures/LinkedList/README.md)
+[**Go to Challenge README File**](DataStructures/LinkedList/README.md)
 
