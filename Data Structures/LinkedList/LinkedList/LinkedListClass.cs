@@ -10,6 +10,11 @@ namespace LinkedList
     {
         public Node Head { get; set; }
 
+        public LinkedListClass()
+        {
+            Head = null;
+        }
+
         public bool IfInclude(int data)
         {
             Node current = Head;
@@ -24,29 +29,27 @@ namespace LinkedList
             return false;
         }
 
-        public void RemoveData(int num)
+        public void RemoveData(int data)
         {
             if (Head == null)
                 return;
 
-            if (Head.Data == num)
+            if (Head.Data == data)
             {
                 Head = Head.Next;
-                Console.WriteLine($"The data ({num}) has been removed");
                 return;
             }
 
             Node current = Head;
-            while (current.Next != null && current.Next.Data != num)
+            while (current.Next != null)
             {
+                if (current.Next.Data == data)
+                {
+                    current.Next = current.Next.Next;
+                    return;
+                }
                 current = current.Next;
             }
-
-            if (current.Next != null)
-            {
-                current.Next = current.Next.Next;
-            }
-            Console.WriteLine($"The data ({num}) has been removed");
         }
 
         public void PrintList()

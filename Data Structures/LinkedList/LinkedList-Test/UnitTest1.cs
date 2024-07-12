@@ -1,5 +1,6 @@
 using LinkedList;
-using Microsoft.VisualStudio.TestPlatform.Utilities;
+using System;
+using System.IO;
 
 namespace LinkedList_Test
 {
@@ -15,8 +16,14 @@ namespace LinkedList_Test
             list.Head.Next.Next = new Node(20);
             list.Head.Next.Next.Next = new Node(30);
 
+            Console.WriteLine("List before removal:");
+            list.PrintList();
+
             // Act
             list.RemoveData(10);
+
+            Console.WriteLine("List after removal:");
+            list.PrintList();
 
             using (var stringWriter = new StringWriter())
             {
@@ -24,7 +31,7 @@ namespace LinkedList_Test
                 list.PrintList();
 
                 // Assert
-                var output = stringWriter.ToString();
+                var output = stringWriter.ToString().Replace("\r\n", "\n");
                 Assert.Equal("Head -> 5 -> 20 -> 30 -> Null\n", output);
             }
 
@@ -49,7 +56,7 @@ namespace LinkedList_Test
                 list.PrintList();
 
                 // Assert
-                var output = stringWriter.ToString();
+                var output = stringWriter.ToString().Replace("\r\n", "\n");
                 Assert.Equal("Head -> 5 -> 10 -> 20 -> 30 -> Null\n", output);
             }
 
