@@ -22,12 +22,12 @@ namespace LinkedList
             node3.Next = node4;
 
             // IfInclude method
-            Console.WriteLine($"Is 3 in the LinkedList ? {linkedList.IfInclude(3)}");
-            Console.WriteLine($"Is 5 in the LinkedList ? {linkedList.IfInclude(5)}");
+            Console.WriteLine($"Is 3 in the LinkedList? {linkedList.IfInclude(3)}");
+            Console.WriteLine($"Is 5 in the LinkedList? {linkedList.IfInclude(5)}");
 
             // RemoveData method  
             linkedList.RemoveData(4);
-            Console.WriteLine($"Is 4 in the LinkedList ? {linkedList.IfInclude(4)}");
+            Console.WriteLine($"Is 4 in the LinkedList? {linkedList.IfInclude(4)}");
 
             // PrintList method
             linkedList.PrintList();
