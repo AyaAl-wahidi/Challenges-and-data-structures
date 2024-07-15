@@ -1,4 +1,4 @@
-# Linked List Implementation in C#
+# Linked List Implementation & Remove Duplicates in C#
 
 ## Problem Domain
 Implement a basic singly linked list data structure in C#.
@@ -7,15 +7,21 @@ Implement a basic singly linked list data structure in C#.
 - The `Node` class should have properties for storing data and a reference to the next node in the linked list.
 - The `LinkedList` class should have a property `Node head` to store the head of the linked list.
 - The `LinkedList` class should support methods to:
-  - `Includes(int data)`: Check if the linked list contains a node with the specified value.
-  - `Remove(int data)`: Remove the first node with the specified data from the linked list.
-  - `PrintList()`: Print the contents of the list in order.
+  - `RemoveDuplicate()`: Remove all duplicate nodes from the linked list.
 
 ### Ensure your implementation includes:
 - A `Node` class with properties for data and a reference to the next node.
-- A `LinkedList` class with methods for adding nodes, removing nodes, and printing the list.
+- A `LinkedList` class with methods for removing duplicate nodes from the list.
 - Handle all exceptions that could be thrown during execution.
 
+## Linked List Implementation Whiteboard
+![**Go to Challenge Whiteboard**](Assets/LinkedList-WB.jpg)
 
-# WhiteBoard
-[**Go to Challenge Whiteboard**](whiteboard-challenges/ArrayReversal.jpg)
+## Linked List Implementation Output
+![**Go to Challenge Output**](Assets/LinkedList-Output.jpg)
+
+## Remove Duplicates Whiteboard
+![**Go to Challenge Whiteboard**](Assets/RemoveDuplicates-WB.jpg)
+
+## Remove Duplicates Output
+![**Go to Challenge Output**](Assets/RemoveDuplicates-Output.jpg)
