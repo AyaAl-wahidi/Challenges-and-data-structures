@@ -15,12 +15,49 @@ namespace LinkedList
             Head = null;
         }
 
-        public bool IfInclude(int data)
+        public void RemoveDuplicate()
         {
             Node current = Head;
             while (current != null)
             {
-                if (current.Data == data)
+                Node index = current;
+                while (index.Next != null)
+                {
+                    if (index.Next.Data == current.Data)
+                    {
+                        index.Next = index.Next.Next;
+                    }
+                    else
+                    {
+                        index = index.Next;
+                    }
+                }
+                current = current.Next;
+            }
+        }
+
+        public void InsertLast(int data)
+        {
+            Node newNode = new Node(data);
+            if (Head == null)
+            {
+                Head = newNode;
+                return;
+            }
+            Node current = Head;
+            while (current.Next != null)
+            {
+                current = current.Next;
+            }
+            current.Next = newNode;
+        }
+
+        public bool IfInclude(int value)
+        {
+            Node current = Head;
+            while (current != null)
+            {
+                if (current.Data == value)
                 {
                     return true;
                 }
@@ -29,12 +66,11 @@ namespace LinkedList
             return false;
         }
 
-        public void RemoveData(int data)
+        public void RemoveData(int value)
         {
-            if (Head == null)
-                return;
+            if (Head == null) return;
 
-            if (Head.Data == data)
+            if (Head.Data == value)
             {
                 Head = Head.Next;
                 return;
@@ -43,7 +79,7 @@ namespace LinkedList
             Node current = Head;
             while (current.Next != null)
             {
-                if (current.Next.Data == data)
+                if (current.Next.Data == value)
                 {
                     current.Next = current.Next.Next;
                     return;
@@ -55,13 +91,12 @@ namespace LinkedList
         public void PrintList()
         {
             Node current = Head;
-            Console.Write("Head -> ");
             while (current != null)
             {
                 Console.Write(current.Data + " -> ");
                 current = current.Next;
             }
-            Console.WriteLine("Null");
+            Console.WriteLine("null");
         }
     }
 }

@@ -32,7 +32,7 @@ namespace LinkedList_Test
 
                 // Assert
                 var output = stringWriter.ToString().Replace("\r\n", "\n");
-                Assert.Equal("Head -> 5 -> 20 -> 30 -> Null\n", output);
+                Assert.Equal("5 -> 20 -> 30 -> null\n", output);
             }
 
             // Reset the console output
@@ -57,7 +57,7 @@ namespace LinkedList_Test
 
                 // Assert
                 var output = stringWriter.ToString().Replace("\r\n", "\n");
-                Assert.Equal("Head -> 5 -> 10 -> 20 -> 30 -> Null\n", output);
+                Assert.Equal("5 -> 10 -> 20 -> 30 -> null\n", output);
             }
 
             // Reset the console output
