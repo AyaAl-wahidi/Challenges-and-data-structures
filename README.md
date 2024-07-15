@@ -44,11 +44,11 @@
 ---
 
 #### Challenge Linked List Implementation
-[**Go to Challenge README File**](Data Structures/LinkedList/LinkedList/README.md)
+[**Go to Challenge README File**](/Data Structures/LinkedList/LinkedList/README.md)
 
 ---
 
 #### Challenge 7: Linked List Remove Duplicates
-[**Go to Challenge README File**](Data Structures/LinkedList/LinkedList/README.md)
+[**Go to Challenge README File**](/Data Structures/LinkedList/LinkedList/README.md)
 
 
