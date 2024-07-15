@@ -20,7 +20,7 @@ namespace LinkedList
             Node current = Head;
             while (current != null)
             {
-                Node index = current;
+                Node index = current; 
                 while (index.Next != null)
                 {
                     if (index.Next.Data == current.Data)
