@@ -10,7 +10,7 @@ Implement a basic singly linked list data structure in C#.
   - `RemoveDuplicate()`: Remove all duplicate nodes from the linked list.
 
 ### Ensure your implementation includes:
-- A `Node` class with properties for data and a reference to the next node.
+- A `Node` class with properties for data and a reference to the next node. 
 - A `LinkedList` class with methods for removing duplicate nodes from the list.
 - Handle all exceptions that could be thrown during execution.
 
