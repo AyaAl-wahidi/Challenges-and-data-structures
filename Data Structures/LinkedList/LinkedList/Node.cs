@@ -18,5 +18,6 @@ namespace LinkedList
             Data = data;
             Next = null;
         }
+        public Node() { }
     }
 }
