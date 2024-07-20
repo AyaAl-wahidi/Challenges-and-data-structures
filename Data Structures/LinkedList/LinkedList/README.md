@@ -25,3 +25,9 @@ Implement a basic singly linked list data structure in C#.
 
 ## Remove Duplicates Output
 ![**Go to Challenge Output**](Assets/RemoveDuplicates-Output.jpg)
+
+## Linked List Merge Sorted Lists Whiteboard
+![**Go to Challenge Whiteboard**](Assets/MergeSortedLists-WB.jpg)
+
+## Linked List Merge Sorted Lists Output
+![**Go to Challenge Output**](Assets/MergeSortedLists-Output.JPG)
