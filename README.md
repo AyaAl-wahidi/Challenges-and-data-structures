@@ -53,3 +53,11 @@
 #### Challenge 7 : Linked List Implementation
 [**Go to Challenge README File**](DataStructures/LinkedList/README.md)
 
+---
+
+
+#### Challenge 8 : Linked List Merge Sorted Lists
+[**Go to Challenge README File**](Data Structures/LinkedList/LinkedList/README.md)
+
+
+
