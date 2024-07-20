@@ -57,7 +57,7 @@
 
 
 #### Challenge 8 : Linked List Merge Sorted Lists
-[**Go to Challenge README File**](Data Structures/LinkedList/LinkedList/README.md)
+[**Go to Challenge README File**](DataStructures/LinkedList/LinkedList/README.md)
 
 
 
