@@ -1,4 +1,4 @@
-# Linked List Implementation & Remove Duplicates in C#
+# Linked List (Implementation & Remove Duplicates & Merge Sorted List) in C#
 
 ## Problem Domain
 Implement a basic singly linked list data structure in C#.
