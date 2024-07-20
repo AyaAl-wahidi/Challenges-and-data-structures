@@ -6,7 +6,6 @@ namespace LinkedList
     {
         static void Main(string[] args)
         {
-            //5 -> 20 -> 20 -> 10 -> 5 -> 10
             Node node1 = new Node(5);
             Node node2 = new Node(20);
             Node node3 = new Node(20);
@@ -35,10 +34,29 @@ namespace LinkedList
             //Console.WriteLine($"Is 4 in the LinkedList? {linkedList.IfInclude(4)}");
 
             // Remove the duplicates
-            linkedList.RemoveDuplicate();
+            // linkedList.RemoveDuplicate();
 
             // PrintList method
-            linkedList.PrintList();
+            // linkedList.PrintList();
+
+            // Merged Two Linked Lists
+            LinkedListClass list1 = new LinkedListClass();
+            list1.AddLast(1);
+            list1.AddLast(3);
+            list1.AddLast(5);
+
+            // Create second linked list
+            LinkedListClass list2 = new LinkedListClass();
+            list2.AddLast(2);
+            list2.AddLast(4);
+            list2.AddLast(6);
+
+            // Merge the linked lists
+            LinkedListClass mergedList = LinkedListClass.MergeTwoLists(list1, list2);
+
+            // Print the merged list
+            Console.WriteLine("Merged List:");
+            mergedList.PrintList();
         }
     }
 }

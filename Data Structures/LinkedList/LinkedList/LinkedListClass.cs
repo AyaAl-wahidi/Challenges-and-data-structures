@@ -98,5 +98,57 @@ namespace LinkedList
             }
             Console.WriteLine("null");
         }
+
+        public void AddLast(int data)
+        {
+            Node newNode = new Node(data);
+            if (Head == null)
+            {
+                Head = newNode;
+                return;
+            }
+
+            Node current = Head;
+            while (current.Next != null)
+            {
+                current = current.Next;
+            }
+            current.Next = newNode;
+        }
+
+        public static LinkedListClass MergeTwoLists(LinkedListClass list1, LinkedListClass list2)
+        {
+            // Step 1: Check for empty lists
+            if (list1.Head == null) return list2;
+            if (list2.Head == null) return list1;
+            // Step 2: Initialize a dummy node
+            Node temp = new Node();
+            Node tail = temp;
+            Node current1 = list1.Head;
+            Node current2 = list2.Head;
+            //List 1 : 1  3  5
+            //List 2 : 2  4  6
+            // Step 3: Merge the lists
+            while (current1 != null && current2 != null)
+            {
+                if (current1.Data <= current2.Data)// 1 <= 2 true // 3 <=  2 false // 3 <= 4 true // 5<=4  false // 5 <= 6 true 
+                {
+                    tail.Next = current1; //1 // 3 // 5
+                    current1 = current1.Next;// 3 //  5 // null
+                }
+                else
+                {
+                    tail.Next = current2; // 2 // 4
+                    current2 = current2.Next; // 4 // 6
+                }
+                tail = tail.Next;// 1  2   3   4  5
+            }
+            // Step 4: Attach remaining nodes
+            tail.Next = (current1 != null) ? current1 : current2; // null else 6
+                                                                  // Step 5: Return the merged list
+            LinkedListClass mergedList = new LinkedListClass();
+            mergedList.Head = temp.Next; // (data.next(daya.next(data,next)))
+            return mergedList;
+        }
     }
 }
