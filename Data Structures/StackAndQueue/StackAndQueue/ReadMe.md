@@ -28,4 +28,4 @@ The Queue implementation follows the First In, First Out (FIFO) principle.
 
 
 ## Stack And Queue Whiteboard
-![**Go to Challenge Whiteboard**](/StackAndQueue/Assests/StackAndQueue-WB.jpg)
+![**Go to Challenge Whiteboard**](/Assests/StackAndQueue-WB.jpg)
