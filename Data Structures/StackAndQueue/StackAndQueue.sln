@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackAndQueue", "StackAndQueue\StackAndQueue.csproj", "{71F03B12-8205-49E9-8C2E-CE891532FDC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackAndQueue-Test", "StackAndQueue-Test\StackAndQueue-Test.csproj", "{AD2B444F-5382-4F0D-B777-1E6361719F5B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71F03B12-8205-49E9-8C2E-CE891532FDC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71F03B12-8205-49E9-8C2E-CE891532FDC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71F03B12-8205-49E9-8C2E-CE891532FDC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71F03B12-8205-49E9-8C2E-CE891532FDC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD2B444F-5382-4F0D-B777-1E6361719F5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD2B444F-5382-4F0D-B777-1E6361719F5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD2B444F-5382-4F0D-B777-1E6361719F5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD2B444F-5382-4F0D-B777-1E6361719F5B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {94737B4C-7FF6-4CD8-AA3A-4FCE64AB5A28}
+	EndGlobalSection
+EndGlobal
