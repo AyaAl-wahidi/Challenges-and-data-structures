@@ -51,18 +51,18 @@
 
 
 #### Challenge 7 : Linked List Implementation
-[**Go to Challenge README File**](DataStructures/LinkedList/README.md)
+[**Go to Challenge README File**]([DataStructures/LinkedList/README.md](https://github.com/AyaAl-wahidi/Challenges-and-data-structures/tree/main/Data%20Structures/LinkedList))
 
 ---
 
 
 #### Challenge 8 : Linked List Merge Sorted Lists
-[**Go to Challenge README File**](Data-Structures/LinkedList/LinkedList/README.md)
+[**Go to Challenge README File**]([Data-Structures/LinkedList/LinkedList/README.md](https://github.com/AyaAl-wahidi/Challenges-and-data-structures/tree/main/Data%20Structures/LinkedList/LinkedList))
 
 
 ---
 
 
 #### Challenge 9 : Stack & Queue Implementation
-[**Go to Challenge README File**](Data Structures/StackAndQueue/StackAndQueue/ReadMe.md)
+[**Go to Challenge README File**]([Data Structures/StackAndQueue/StackAndQueue/ReadMe.md](https://github.com/AyaAl-wahidi/Challenges-and-data-structures/tree/main/Data%20Structures/StackAndQueue/StackAndQueue))
 
