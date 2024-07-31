@@ -11,4 +11,4 @@ This project provides an implementation of a method to reverse a stack using a q
 - The `QueueClass` should have standard queue operations: `EnQueue`, `DeQueue`, and `IsEmpty`.
 
 ## Whiteboard
-![**Challenge Whiteboard**](/Assests/ReverseStackUsingQueue-WB.jpg)
+![**Challenge Whiteboard**](/Assests/ReverseStackUsingQueue-WB.jpg/)
