@@ -48,6 +48,10 @@ namespace StackAndQueue.StackAndQueue
 
             int data = Front.Data;
             Front = Front.Next;
+            if (Front == null)
+            {
+                Back = null;
+            }
             return data;
         }
 

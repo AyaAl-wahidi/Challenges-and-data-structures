@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using StackAndQueue.StackAndQueue;
+using StackAndQueue.ReverseStackUsingQueue;
 
 namespace StackAndQueue
 {
@@ -40,6 +41,22 @@ namespace StackAndQueue
             Console.WriteLine($"The Queue After DeQueue {queueClass.DeQueue()} :");
             queueClass.PrintQueue();
             Console.WriteLine($"Is The Queue Empty? {queueClass.IsEmpty()}");
+            Console.WriteLine();
+
+            // Reverse Stack using Queue
+            Console.WriteLine(" **************** Reverse Stack ****************");
+            StackClass reverseS = new StackClass();
+            reverseS.Push(1);
+            reverseS.Push(2);
+            reverseS.Push(3);
+            reverseS.Push(4);
+            reverseS.Push(5);
+            StackWithReverse stackWithReverse = new StackWithReverse();
+            
+            Console.WriteLine("The Stack Before Reverse :");
+            reverseS.PrintStack();
+            Console.WriteLine("The Stack After Reverse :");
+            stackWithReverse.ReverseStack(reverseS);
         }
     }
 }
