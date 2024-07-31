@@ -66,3 +66,8 @@
 #### Challenge 9 : Stack & Queue Implementation
 [**Go to Challenge README File**](https://github.com/AyaAl-wahidi/Challenges-and-data-structures/tree/main/Data%20Structures/StackAndQueue/StackAndQueue)
 
+---
+
+
+#### Challenge 10 : Reverse Stack Using Queue
+[**Go to Challenge README File**](https://github.com/AyaAl-wahidi/Challenges-and-data-structures/blob/main/Data%20Structures/StackAndQueue/StackAndQueue/ReverseStackUsingQueue/ReadMe.md)
