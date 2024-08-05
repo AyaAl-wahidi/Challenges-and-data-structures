@@ -8,7 +8,7 @@ namespace StackAndQueue.StackAndQueue
 {
     public class StackClass
     {
-        private Node Top;
+        public Node Top;
 
         public StackClass() {
             Top = null;
@@ -57,6 +57,19 @@ namespace StackAndQueue.StackAndQueue
                 newNode = newNode.Next;
             }
             Console.WriteLine();
+        }
+
+        // Helper method to count elements in the stack
+        public int Count()
+        {
+            int count = 0;
+            Node current = Top;
+            while (current != null)
+            {
+                count++;
+                current = current.Next;
+            }
+            return count;
         }
     }
 }

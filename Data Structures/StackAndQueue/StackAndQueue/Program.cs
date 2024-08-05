@@ -6,8 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 using StackAndQueue.StackAndQueue;
 using StackAndQueue.ReverseStackUsingQueue;
+using StackAndQueue.DeleteMiddleElement;
 
-namespace StackAndQueue
+namespace StackAndQueue.StackAndQueue
 {
     public class Program
     {
@@ -57,6 +58,24 @@ namespace StackAndQueue
             reverseS.PrintStack();
             Console.WriteLine("The Stack After Reverse :");
             stackWithReverse.ReverseStack(reverseS);
+
+            Console.WriteLine(" **************** Delete Middle Element from Stack ****************");
+            StackClass deleteMiddleStack = new StackClass();
+            deleteMiddleStack.Push(1);
+            deleteMiddleStack.Push(2);
+            deleteMiddleStack.Push(3);
+            deleteMiddleStack.Push(4);
+            deleteMiddleStack.Push(5);
+            deleteMiddleStack.Push(6);
+
+            Console.WriteLine("Before:");
+            deleteMiddleStack.PrintStack();
+
+            StackWithDeleteMiddle stackWithDeleteMiddle = new StackWithDeleteMiddle();
+            stackWithDeleteMiddle.DeleteMiddle(deleteMiddleStack);
+
+            Console.WriteLine("After:");
+            deleteMiddleStack.PrintStack();
         }
     }
 }
