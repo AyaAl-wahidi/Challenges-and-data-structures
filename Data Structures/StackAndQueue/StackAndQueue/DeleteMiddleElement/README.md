@@ -25,4 +25,4 @@ The `StackWithDeleteMiddle` class addresses this challenge by providing a method
 - **Handle edge cases where the stack is empty or has only one element.**
 
 ## Whiteboard
-![**Challenge Whiteboard**](/Assets/DeleteMiddleElementOfStack-WB.jpg)
+![**Challenge Whiteboard**](https://github.com/AyaAl-wahidi/Challenges-and-data-structures/blob/main/Data%20Structures/StackAndQueue/StackAndQueue/DeleteMiddleElement/Assets/DeleteMiddleElementOfStack-WB.jpg)
