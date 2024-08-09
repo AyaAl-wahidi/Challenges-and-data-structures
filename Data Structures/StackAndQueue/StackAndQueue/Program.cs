@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using StackAndQueue.StackAndQueue;
 using StackAndQueue.ReverseStackUsingQueue;
+using StackAndQueue.MinStack;
 using StackAndQueue.DeleteMiddleElement;
 
 namespace StackAndQueue.StackAndQueue
@@ -76,6 +77,39 @@ namespace StackAndQueue.StackAndQueue
 
             Console.WriteLine("After:");
             deleteMiddleStack.PrintStack();
+
+            Console.WriteLine(" **************** Remove Min Value From Stack ****************");
+
+            MinStackClass minStack = new MinStackClass();
+
+            minStack.Push(15); // Top -> 15 (min: 15)
+            minStack.Push(7);  // Top -> 7 -> 15 (min: 7) 
+            minStack.Push(12); // Top -> 12 -> 7 -> 15 (min: 7)
+            minStack.Push(3);  // Top -> 3 -> 12 -> 7 -> 15 (min: 3)
+
+            minStack.PrintStack(); // Output: Top -> 3 -> 12 -> 7 -> 15 -> null
+
+            int min = minStack.GetMin(); // min: 3
+            Console.WriteLine("Minimum: " + min);
+
+            int popped = minStack.Pop(); // popped: 3
+            Console.WriteLine("Popped: " + popped);
+            minStack.PrintStack(); // Output: Top -> 12 -> 7 -> 15 -> null
+
+            min = minStack.GetMin(); // min: 7
+            Console.WriteLine("Minimum: " + min);
+
+            int peeked = minStack.Top(); // peeked: 12
+            Console.WriteLine("Top: " + peeked);
+
+            minStack.Push(2);  // Top -> 2 -> 12 -> 7 -> 15 (min: 2)
+            minStack.PrintStack(); // Output: Top -> 2 -> 12 -> 7 -> 15 -> null
+
+            min = minStack.GetMin(); // min: 2
+            Console.WriteLine("Minimum: " + min);
+
+            bool isEmpty = minStack.IsEmpty(); // isEmpty: false
+            Console.WriteLine("Is Stack Empty: " + isEmpty);
         }
     }
 }
