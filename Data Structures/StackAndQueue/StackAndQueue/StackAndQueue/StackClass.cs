@@ -47,6 +47,12 @@ namespace StackAndQueue.StackAndQueue
             return Top.Data;
         }
 
+        // Top Method => Return The Top Node From The Stack
+        public int TopStack()
+        {
+            return Peek();
+        }
+
         // Print Method => To Print The Stack
         public void PrintStack()
         {
