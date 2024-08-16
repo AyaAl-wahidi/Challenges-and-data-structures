@@ -1,4 +1,6 @@
-﻿namespace TreeImplementation
+﻿using System.Xml.Linq;
+
+namespace TreeImplementation
 {
     internal class Program
     {
@@ -53,9 +55,23 @@
             // Print the entire tree with indentation
             Console.WriteLine("\nPrinting the Binary Tree:");
             bt.Print();
+            Console.WriteLine();
 
-            Console.WriteLine("\nPress any key to exit...");
-            Console.ReadKey();
+            Console.WriteLine(" *********** In Oreder Traversal ***********");
+            BinaryTree Btree = new BinaryTree();
+            Btree.Root = new TNode(4);
+            Btree.Root.Left = new TNode(8);
+            Btree.Root.Right = new TNode(7);
+            Btree.Root.Left.Left = new TNode(12);
+            Btree.Root.Left.Right = new TNode(9);
+            List<int> printList = Btree.InOrderTrav(Btree.Root); 
+
+            // Mirror the BinaryTree
+            Btree.Mirror(Btree.Root);
+
+            // Print the mirrored BinaryTree
+            Console.WriteLine(" *********** Mirrored Binary Tree ***********");
+            Btree.PrintInOrder();
         }
     }
 }
