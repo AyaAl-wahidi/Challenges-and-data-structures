@@ -56,7 +56,6 @@ namespace TreeImplementation
 
         public TNode DeleteRecursively(TNode root, int value)
         {
-
             if (root == null)
                 return root;
 
@@ -80,9 +79,7 @@ namespace TreeImplementation
                 root.Value = InOrderSuccessor(root.Right);
                 root.Right = DeleteRecursively(root.Right, root.Value);
             }
-
             return root;
-
         }
 
         public int InOrderSuccessor(TNode root)
