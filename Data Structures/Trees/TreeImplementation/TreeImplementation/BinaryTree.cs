@@ -95,5 +95,28 @@ namespace TreeImplementation
                 Console.WriteLine($"Error during In-Order traversal: {ex.Message}");
             }
         }
+
+        int FirstMax = 0;
+        int SecMax = 0;
+        public int FindSecondMax(TNode node)
+        {
+            if (node == null) return SecMax;
+
+            if (node.Value > FirstMax)
+            {
+                SecMax = FirstMax;
+                FirstMax = node.Value;
+                if (node.Left == null && node.Right == null) return FirstMax;
+            }
+            else if (node.Value > SecMax && node.Value < FirstMax)
+            {
+                SecMax = node.Value;
+            }
+
+            FindSecondMax(node.Left);
+            FindSecondMax(node.Right);
+
+            return SecMax;
+        }
     }
 }
