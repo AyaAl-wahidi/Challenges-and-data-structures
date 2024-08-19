@@ -16,4 +16,4 @@ This project provides an implementation of a Binary Tree and Binary Search Tree 
 	
 	
 ## Binary Tree & Binary Search Tree Implementation Whiteboard
-![**Challenge Whiteboard**](/Assest/TreeImplementation-WB.jpg)
+![**Challenge Whiteboard**](https://github.com/AyaAl-wahidi/Challenges-and-data-structures/blob/main/Data%20Structures/Trees/TreeImplementation/TreeImplementation/Assest/TreeImplementation-WB.jpg)

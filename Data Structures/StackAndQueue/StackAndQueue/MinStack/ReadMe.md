@@ -13,4 +13,4 @@ This implementation of a MinStack in C# provides an efficient way to keep track 
 
 
 ## Whiteboard
-![**Challenge Whiteboard**](/Assests/MinStackChallenge-WB.jpg)
+![**Challenge Whiteboard**](https://github.com/AyaAl-wahidi/Challenges-and-data-structures/blob/main/Data%20Structures/StackAndQueue/StackAndQueue/MinStack/Assests/MinStackChallenge-WB.jpg)
