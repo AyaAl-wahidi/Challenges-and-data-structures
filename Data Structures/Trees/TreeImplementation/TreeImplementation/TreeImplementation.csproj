@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="LeafSum\Assets\" />
     <Folder Include="MirrorTree\Assets\" />
   </ItemGroup>
 
