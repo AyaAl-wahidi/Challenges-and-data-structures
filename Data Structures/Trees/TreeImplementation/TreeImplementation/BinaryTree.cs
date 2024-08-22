@@ -62,7 +62,7 @@ namespace TreeImplementation
             PrintRecursively(node.Left, output);
             PrintRecursively(node.Right, output);
         }
-      
+
         public List<int> InOrderTrav(TNode node)
         {
             if (node == null) return null;
@@ -70,7 +70,7 @@ namespace TreeImplementation
             Console.WriteLine(node.Value);
             InOrderTraversal(node.Right);
             list.Add(node.Value);
-            return list; 
+            return list;
         }
 
         public void Mirror(TNode node)
@@ -117,6 +117,16 @@ namespace TreeImplementation
             FindSecondMax(node.Right);
 
             return SecMax;
+        }
+
+        public int LeafSum(TNode node)
+        {
+            if (node == null) return 0;
+            if (node.Left == null && node.Right == null) return node.Value;
+            int leftRec = LeafSum(node.Left);
+            int rightRec = LeafSum(node.Right);
+
+            return leftRec + rightRec;
         }
     }
 }
