@@ -128,5 +128,67 @@ namespace TreeImplementation
 
             return leftRec + rightRec;
         }
+
+
+
+        // Level 0: 5
+        // Level 1: 13
+        // Level 2: 20
+        // Level 3: 11
+        //List<int> ints = new List<int>();
+        //int max = 0;
+        //public List<int> LargestValueEachLevel(TNode node)
+        //{
+        //    if (node == null) return null;
+
+        //    if (node.Left != null && node.Right != null)
+        //    {
+        //        if (node.Left.Value > node.Right.Value)
+        //        {
+        //            max = node.Left.Value;
+        //            ints.Add(max);
+        //            LargestValueEachLevel(node.Left);
+        //        }
+        //        else
+        //        {
+        //            max = node.Right.Value;
+        //            ints.Add(max);
+        //            LargestValueEachLevel(node.Right);
+        //        }
+        //    }
+        //    return ints;
+        //}
+
+        public List<int> LargestValueEachLevel()
+        {
+            if (Root == null)
+            {
+                throw new InvalidOperationException("Empty Tree!");
+            }
+
+            var list = new List<int>();
+            FindLargestValues(Root, 0, list);
+            return list;
+        }
+
+        private void FindLargestValues(TNode node, int level, List<int> list)
+        {
+            if (node == null)
+            {
+                return;
+            }
+
+            //If we are visiting this level for the first time
+            if (level == list.Count)
+                {
+                    list.Add(node.Value);
+                }
+                else
+                {
+                    list[level] = Math.Max(list[level], node.Value);
+                }
+            FindLargestValues(node.Left, level + 1, list);
+            FindLargestValues(node.Right, level + 1, list);
+        }
     }
 }

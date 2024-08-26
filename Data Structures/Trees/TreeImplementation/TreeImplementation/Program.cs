@@ -1,4 +1,5 @@
 ﻿using System.Xml.Linq;
+using System.Collections.Generic;
 
 namespace TreeImplementation
 {
@@ -90,20 +91,42 @@ namespace TreeImplementation
             //Console.WriteLine($"The second maximum value in the tree is: {secondMax}");
 
             // Sum of leaf nodes ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-            BinaryTree STree = new BinaryTree();
-            STree.Root = new TNode(9);
-            STree.Root.Left = new TNode(8);
-            STree.Root.Right = new TNode(12);
-            STree.Root.Left.Left = new TNode(3);
-            STree.Root.Left.Right = new TNode(7);
-            STree.Root.Right.Left = new TNode(17);
-            STree.Root.Right.Right = new TNode(23);
-            STree.Root.Left.Left.Right = new TNode(4);
-            Console.WriteLine(" *********** Sum of leaf nodes ***********");
-            STree.PrintInOrder();
+            //BinaryTree STree = new BinaryTree();
+            //STree.Root = new TNode(9);
+            //STree.Root.Left = new TNode(8);
+            //STree.Root.Right = new TNode(12);
+            //STree.Root.Left.Left = new TNode(3);
+            //STree.Root.Left.Right = new TNode(7);
+            //STree.Root.Right.Left = new TNode(17);
+            //STree.Root.Right.Right = new TNode(23);
+            //STree.Root.Left.Left.Right = new TNode(4);
+            //Console.WriteLine(" *********** Sum of leaf nodes ***********");
+            //STree.PrintInOrder();
 
-            int sum = STree.LeafSum(STree.Root);
-            Console.WriteLine($"The Sum = {sum}");
+            //int sum = STree.LeafSum(STree.Root);
+            //Console.WriteLine($"The Sum = {sum}");
+
+            // Largest Value at Each Level ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            BinaryTree largeTree = new BinaryTree();
+            largeTree.Root = new TNode(5);
+            largeTree.Root.Left = new TNode(13);
+            largeTree.Root.Right = new TNode(7);
+            largeTree.Root.Left.Left = new TNode(3);
+            largeTree.Root.Left.Right = new TNode(7);
+            largeTree.Root.Right.Left = new TNode(12);
+            largeTree.Root.Right.Right = new TNode(20);
+            largeTree.Root.Left.Left.Left = new TNode(1);
+            largeTree.Root.Left.Left.Right = new TNode(4);
+            largeTree.Root.Right.Left.Right = new TNode(11);
+
+            List<int> largestValues = largeTree.LargestValueEachLevel(); // Output: [5, 13, 20, 11]
+
+            Console.Write($"Largest Value at Each Level : ");
+
+            foreach (int value in largestValues)
+            {
+                Console.Write(value + " ");
+            }
         }
     }
 }
