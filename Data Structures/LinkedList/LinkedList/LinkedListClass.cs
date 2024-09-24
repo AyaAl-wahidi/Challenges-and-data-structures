@@ -150,5 +150,21 @@ namespace LinkedList
             mergedList.Head = temp.Next; // (data.next(daya.next(data,next)))
             return mergedList;
         }
+
+        public LinkedListClass RotateLeft(LinkedListClass list, int k)
+        {
+            if (list.Head == null || k == 0) return list;
+
+            Node current = list.Head;
+
+            while (k != 0)
+            {
+                list.AddLast(current.Data);
+                list.RemoveData(current.Data);
+                current = current.Next;
+                k--;
+            }
+            return list;
+        }
     }
 }
