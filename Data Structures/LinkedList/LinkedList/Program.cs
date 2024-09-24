@@ -57,6 +57,18 @@ namespace LinkedList
             // Print the merged list
             Console.WriteLine("Merged List:");
             mergedList.PrintList();
+
+
+            Console.WriteLine("/////////////////// Rotate K To The End Of LinkedList ///////////////////");
+            LinkedListClass list3 = new LinkedListClass();
+            list3.AddLast(1);
+            list3.AddLast(2);
+            list3.AddLast(3);
+            list3.AddLast(4);
+            list3.AddLast(5);
+
+            list3.RotateLeft(list3, 2);
+            list3.PrintList();
         }
     }
 }
