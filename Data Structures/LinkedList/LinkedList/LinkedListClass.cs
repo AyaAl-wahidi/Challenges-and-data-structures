@@ -155,7 +155,7 @@ namespace LinkedList
         {
             if (list.Head == null || k == 0) return list;
 
-            Node current = list.Head;
+            Node current = list.Head; 
 
             while (k != 0)
             {
