@@ -107,26 +107,38 @@ namespace TreeImplementation
             //Console.WriteLine($"The Sum = {sum}");
 
             // Largest Value at Each Level ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-            BinaryTree largeTree = new BinaryTree();
-            largeTree.Root = new TNode(5);
-            largeTree.Root.Left = new TNode(13);
-            largeTree.Root.Right = new TNode(7);
-            largeTree.Root.Left.Left = new TNode(3);
-            largeTree.Root.Left.Right = new TNode(7);
-            largeTree.Root.Right.Left = new TNode(12);
-            largeTree.Root.Right.Right = new TNode(20);
-            largeTree.Root.Left.Left.Left = new TNode(1);
-            largeTree.Root.Left.Left.Right = new TNode(4);
-            largeTree.Root.Right.Left.Right = new TNode(11);
+            //BinaryTree largeTree = new BinaryTree();
+            //largeTree.Root = new TNode(5);
+            //largeTree.Root.Left = new TNode(13);
+            //largeTree.Root.Right = new TNode(7);
+            //largeTree.Root.Left.Left = new TNode(3);
+            //largeTree.Root.Left.Right = new TNode(7);
+            //largeTree.Root.Right.Left = new TNode(12);
+            //largeTree.Root.Right.Right = new TNode(20);
+            //largeTree.Root.Left.Left.Left = new TNode(1);
+            //largeTree.Root.Left.Left.Right = new TNode(4);
+            //largeTree.Root.Right.Left.Right = new TNode(11);
 
-            List<int> largestValues = largeTree.LargestValueEachLevel(); // Output: [5, 13, 20, 11]
+            //List<int> largestValues = largeTree.LargestValueEachLevel(); // Output: [5, 13, 20, 11]
 
-            Console.Write($"Largest Value at Each Level : ");
+            //Console.Write($"Largest Value at Each Level : ");
 
-            foreach (int value in largestValues)
-            {
-                Console.Write(value + " ");
-            }
+            //foreach (int value in largestValues)
+            //{
+            //    Console.Write(value + " ");
+            //}
+
+            ///Binary Tree - Print Right View///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            BinaryTree Btree = new BinaryTree();
+            Btree.Root = new TNode(2);
+            Btree.Root.Left = new TNode(3);
+            Btree.Root.Right = new TNode(5);
+            Btree.Root.Left.Left = new TNode(4);
+            Btree.Root.Right.Right = new TNode(6);
+            Btree.Root.Left.Left.Right = new TNode(7);
+
+            Btree.PrintRightView(Btree.Root);  // Output: 2 5 6 7
         }
     }
 }

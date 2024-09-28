@@ -180,15 +180,39 @@ namespace TreeImplementation
 
             //If we are visiting this level for the first time
             if (level == list.Count)
-                {
-                    list.Add(node.Value);
-                }
-                else
-                {
-                    list[level] = Math.Max(list[level], node.Value);
-                }
+            {
+                list.Add(node.Value);
+            }
+            else
+            {
+                list[level] = Math.Max(list[level], node.Value);
+            }
             FindLargestValues(node.Left, level + 1, list);
             FindLargestValues(node.Right, level + 1, list);
+        }
+
+        public void PrintRightView(TNode node)
+        {
+            TNode current = node.Left;
+            while (node != null)
+            {
+                Console.WriteLine(node.Value);
+                node = node.Right;
+            }
+            while (current != null)
+            {
+                TNode temp = current;
+                current = current.Right;
+                if (current == null && temp.Left != null)
+                {
+                    current = temp.Left;
+                    current = current.Right;
+                }
+                if (current != null)
+                {
+                    Console.WriteLine(current.Value);
+                }
+            }
         }
     }
 }
