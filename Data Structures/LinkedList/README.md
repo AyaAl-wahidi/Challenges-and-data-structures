@@ -18,4 +18,4 @@ Implement a basic singly linked list data structure in C#.
 
 
 # WhiteBoard
-[**Go to Challenge Whiteboard**](whiteboard-challenges/ArrayReversal.jpg)
+![**Challenge Whiteboard**](/whiteboard-challenges/ArrayReversal.jpg)

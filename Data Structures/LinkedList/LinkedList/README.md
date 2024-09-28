@@ -1,4 +1,4 @@
-# Linked List Implementation & Remove Duplicates in C#
+# Linked List (Implementation & Remove Duplicates & Merge Sorted List) in C#
 
 ## Problem Domain
 Implement a basic singly linked list data structure in C#.
@@ -18,13 +18,13 @@ Implement a basic singly linked list data structure in C#.
 ![**Go to Challenge Whiteboard**](Assets/LinkedList-WB.jpg)
 
 ## Linked List Implementation Output
-![**Go to Challenge Output**](Assets/LinkedList-Output.jpg)
+![**Go to Challenge Output**](Assets/LinkedList-Output.JPG)
 
 ## Remove Duplicates Whiteboard
 ![**Go to Challenge Whiteboard**](Assets/RemoveDuplicates-WB.jpg)
 
 ## Remove Duplicates Output
-![**Go to Challenge Output**](Assets/RemoveDuplicates-Output.jpg)
+![**Go to Challenge Output**](Assets/RemoveDuplicates-Output.JPG)
 
 ## Linked List Merge Sorted Lists Whiteboard
 ![**Go to Challenge Whiteboard**](Assets/MergeSortedLists-WB.jpg)
@@ -32,5 +32,8 @@ Implement a basic singly linked list data structure in C#.
 ## Linked List Merge Sorted Lists Output
 ![**Go to Challenge Output**](Assets/MergeSortedLists-Output.JPG)
 
+
 ## Linked List - Rotate by K Whiteboard
 ![**Go to Challenge Whiteboard**](Assets/RotateLeftKFromLinkedList-WB.jpg)
+=======
+
