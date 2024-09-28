@@ -40,7 +40,7 @@ namespace LinkedList_Test
             // Arrange
             LinkedListClass list = new LinkedListClass();
             list.Head = new Node(5);
-            list.Head.Next = new Node(10);
+            list.Head.Next = new Node(10); 
             list.Head.Next.Next = new Node(15);
             list.Head.Next.Next.Next = new Node(20);
 

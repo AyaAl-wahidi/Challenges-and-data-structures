@@ -31,3 +31,9 @@ Implement a basic singly linked list data structure in C#.
 
 ## Linked List Merge Sorted Lists Output
 ![**Go to Challenge Output**](Assets/MergeSortedLists-Output.JPG)
+
+
+## Linked List - Rotate by K Whiteboard
+![**Go to Challenge Whiteboard**](Assets/RotateLeftKFromLinkedList-WB.jpg)
+=======
+
