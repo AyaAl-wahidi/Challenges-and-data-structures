@@ -7,4 +7,4 @@ This project implements a method `LargestLevelValue()` to find the level of a bi
 Given a binary tree, determine which level has the most nodes. Levels are indexed starting from 0. If multiple levels have the same number of nodes, the lowest level should be returned.
 
 ## Binary Tree - Level with Maximum Number of Nodes Whiteboard
-![**Challenge Whiteboard**](/Assets/BT-MaxLevelNodes-WB.jpg)
+![**Challenge Whiteboard**](https://github.com/AyaAl-wahidi/Challenges-and-data-structures/blob/main/Data%20Structures/Trees/TreeImplementation/TreeImplementation/MaxLevelNodes/Assets/BT-MaxLevelNodes-WB.jpg)
