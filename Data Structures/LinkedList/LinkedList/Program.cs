@@ -69,6 +69,7 @@ namespace LinkedList
 
             list3.RotateLeft(list3, 2);
             list3.PrintList();
+
         }
     }
 }

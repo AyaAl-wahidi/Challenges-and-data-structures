@@ -130,15 +130,28 @@ namespace TreeImplementation
 
             ///Binary Tree - Print Right View///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-            BinaryTree Btree = new BinaryTree();
-            Btree.Root = new TNode(2);
-            Btree.Root.Left = new TNode(3);
-            Btree.Root.Right = new TNode(5);
-            Btree.Root.Left.Left = new TNode(4);
-            Btree.Root.Right.Right = new TNode(6);
-            Btree.Root.Left.Left.Right = new TNode(7);
+            //BinaryTree Btree = new BinaryTree();
+            //Btree.Root = new TNode(2);
+            //Btree.Root.Left = new TNode(3);
+            //Btree.Root.Right = new TNode(5);
+            //Btree.Root.Left.Left = new TNode(4);
+            //Btree.Root.Right.Right = new TNode(6);
+            //Btree.Root.Left.Left.Right = new TNode(7);
 
-            Btree.PrintRightView(Btree.Root);  // Output: 2 5 6 7
+            //Btree.PrintRightView(Btree.Root);  // Output: 2 5 6 7
+
+            /////// Binary Tree - Level with Maximum Number of Nodes ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            BinaryTree Btree2 = new BinaryTree();
+            Btree2.Root = new TNode(1);
+            Btree2.Root.Left = new TNode(2);
+            Btree2.Root.Right = new TNode(3);
+            Btree2.Root.Left.Left = new TNode(4);
+            Btree2.Root.Left.Right = new TNode(5);
+            Btree2.Root.Right.Right = new TNode(6);
+            Btree2.Root.Left.Left.Left = new TNode(7);
+
+            int maxLevel = Btree2.LargestLevelValue(); // Output: 2
+            Console.WriteLine("Level with the most nodes: " + maxLevel);
         }
     }
 }

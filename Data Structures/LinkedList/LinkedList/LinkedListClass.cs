@@ -99,6 +99,7 @@ namespace LinkedList
             Console.WriteLine("null");
         }
 
+
         public void AddLast(int data)
         {
             Node newNode = new Node(data);
