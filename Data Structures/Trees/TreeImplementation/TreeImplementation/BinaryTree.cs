@@ -214,5 +214,38 @@ namespace TreeImplementation
                 }
             }
         }
+
+        public int LargestLevelValue()
+        {
+            List<int> nodeCountsPerLevel = new List<int>();
+            LargestLevelValue(Root, 0, nodeCountsPerLevel);
+
+            int maxLevel = 0;
+            int maxNodes = nodeCountsPerLevel[0];
+            for (int i = 1; i < nodeCountsPerLevel.Count; i++)
+            {
+                if (nodeCountsPerLevel[i] > maxNodes)
+                {
+                    maxNodes = nodeCountsPerLevel[i];
+                    maxLevel = i;
+                }
+            }
+            return maxLevel;
+        }
+
+        private void LargestLevelValue(TNode node, int level, List<int> nodeCountsPerLevel)
+        {
+            if (node == null) return;
+
+            if (level == nodeCountsPerLevel.Count)
+            {
+                nodeCountsPerLevel.Add(0);
+            }
+
+            nodeCountsPerLevel[level]++;
+
+            LargestLevelValue(node.Left, level + 1, nodeCountsPerLevel);
+            LargestLevelValue(node.Right, level + 1, nodeCountsPerLevel);
+        }
     }
 }
