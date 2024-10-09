@@ -124,5 +124,12 @@
 #### Challenge 18 : Binary Tree - Level with Maximum Number of Nodes
 [**Go to Challenge README File**](https://github.com/AyaAl-wahidi/Challenges-and-data-structures/tree/main/Data%20Structures/Trees/TreeImplementation/TreeImplementation/MaxLevelNodes)
 
+---
+
+
+#### Challenge 19 : Binary Tree - Minimum Depth
+[**Go to Challenge README File**](https://github.com/AyaAl-wahidi/Challenges-and-data-structures/tree/main/Data%20Structures/Trees/TreeImplementation/TreeImplementation/MinimumDepth)
+
+
 
 
