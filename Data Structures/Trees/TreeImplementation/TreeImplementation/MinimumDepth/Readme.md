@@ -13,4 +13,4 @@ The **minimum depth** of a binary tree is the shortest distance from the root no
 
 
 ## Minimum Depth of Binary Tree Whiteboard
-![**Challenge Whiteboard**](/Assets/BT-MinimumDepth-WB.jpg)
+![**Challenge Whiteboard**](https://github.com/AyaAl-wahidi/Challenges-and-data-structures/blob/main/Data%20Structures/Trees/TreeImplementation/TreeImplementation/MinimumDepth/Assets/BT-MinimumDepth-WB.jpg)
