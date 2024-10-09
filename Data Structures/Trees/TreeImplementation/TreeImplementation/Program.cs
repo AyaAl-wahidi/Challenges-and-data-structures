@@ -141,17 +141,28 @@ namespace TreeImplementation
             //Btree.PrintRightView(Btree.Root);  // Output: 2 5 6 7
 
             /////// Binary Tree - Level with Maximum Number of Nodes ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-            BinaryTree Btree2 = new BinaryTree();
-            Btree2.Root = new TNode(1);
-            Btree2.Root.Left = new TNode(2);
-            Btree2.Root.Right = new TNode(3);
-            Btree2.Root.Left.Left = new TNode(4);
-            Btree2.Root.Left.Right = new TNode(5);
-            Btree2.Root.Right.Right = new TNode(6);
-            Btree2.Root.Left.Left.Left = new TNode(7);
+            //BinaryTree Btree2 = new BinaryTree();
+            //Btree2.Root = new TNode(1);
+            //Btree2.Root.Left = new TNode(2);
+            //Btree2.Root.Right = new TNode(3);
+            //Btree2.Root.Left.Left = new TNode(4);
+            //Btree2.Root.Left.Right = new TNode(5);
+            //Btree2.Root.Right.Right = new TNode(6);
+            //Btree2.Root.Left.Left.Left = new TNode(7);
 
-            int maxLevel = Btree2.LargestLevelValue(); // Output: 2
-            Console.WriteLine("Level with the most nodes: " + maxLevel);
+            //int maxLevel = Btree2.LargestLevelValue(); // Output: 2
+            //Console.WriteLine("Level with the most nodes: " + maxLevel);
+
+            ///Binary Tree - Minimum Depth///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            BinaryTree Btree3 = new BinaryTree();
+            Btree3.Root = new TNode(1);
+            Btree3.Root.Left = new TNode(2);
+            Btree3.Root.Right = new TNode(3);
+            Btree3.Root.Left.Left = new TNode(4);
+            Btree3.Root.Left.Right = new TNode(5);
+
+            int MinimumDepth = Btree3.FindMinimumDepth(Btree3.Root); // Output: 2
+            Console.WriteLine("The Minimum Depth: " + MinimumDepth);
         }
     }
 }

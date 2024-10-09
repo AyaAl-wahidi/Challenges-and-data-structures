@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design.Serialization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,6 +12,7 @@ namespace TreeImplementation
     {
         public TNode Root;
         List<int> list = new List<int>();
+
         public BinaryTree()
         {
             Root = null;
@@ -246,6 +248,20 @@ namespace TreeImplementation
 
             LargestLevelValue(node.Left, level + 1, nodeCountsPerLevel);
             LargestLevelValue(node.Right, level + 1, nodeCountsPerLevel);
+        }
+
+        public int FindMinimumDepth(TNode node)
+        {
+            if (node == null) return 0;
+
+            // If there is no left subtree, recur for right subtree
+            if (node.Left == null) return FindMinimumDepth(node.Right) + 1;
+
+            // If there is no right subtree, recur for left subtree
+            if (node.Right == null) return FindMinimumDepth(node.Left) + 1;
+
+            // If both left and right children exist, recur for both and take the minimum
+            return Math.Min(FindMinimumDepth(node.Left), FindMinimumDepth(node.Right));
         }
     }
 }
