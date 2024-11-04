@@ -263,5 +263,87 @@ namespace TreeImplementation
             // If both left and right children exist, recur for both and take the minimum
             return Math.Min(FindMinimumDepth(node.Left), FindMinimumDepth(node.Right));
         }
+
+        //Diameter of Binary Tree 
+        int maxDiameter = 0;
+        public int DiameterOfBinaryTree(TNode root)
+        {
+            LongestPath(root);
+            return maxDiameter;
+        }
+
+        public int LongestPath(TNode node)
+        {
+            if (node == null)
+                return 0;
+
+            int leftDepth = LongestPath(node.Left);
+            int rightDepth = LongestPath(node.Right);
+
+            // Update the maximum diameter (the sum of left and right depths)
+            maxDiameter = Math.Max(maxDiameter, leftDepth + rightDepth);
+
+            // Return the height of the current node
+            return Math.Max(leftDepth, rightDepth) + 1;
+        }
+
+        public TNode MergedTwoTrees(TNode node1, TNode node2)
+        {
+            if (node1 == null && node2 == null) return null;
+            int value = (node1?.Value ?? 0) + (node2?.Value ?? 0);
+            TNode resultTree = new TNode(value);
+
+            resultTree.Left = MergedTwoTrees(node1?.Left, node2?.Left);
+            resultTree.Right = MergedTwoTrees(node1?.Right, node2?.Right);
+
+            return resultTree;
+        }
+
+        public void PrintT(TNode node)
+        {
+            Console.WriteLine("----------------------------->");
+            print2DUtil(node, 0);
+        }
+
+        int COUNT = 7;
+        private void print2DUtil(TNode root, int space)
+        {
+            if (root == null)
+                return;
+            space += COUNT;
+            print2DUtil(root.Right, space);
+            Console.Write("\n");
+            for (int i = COUNT; i < space; i++)
+                Console.Write(" ");
+            Console.Write(root.Value + "\n");
+            print2DUtil(root.Left, space);
+        }
+
+        List<int> lists = new List<int>();
+        public void BTToList(TNode node)
+        {
+            if (node == null) return;
+            lists.Add(node.Value);
+            BTToList(node.Left);
+            BTToList(node.Right);
+        }
+        public TNode BTToBST(TNode node)
+        {
+            BTToList(node);
+            lists.Sort();
+            return Result(lists, 0, lists.Count - 1);
+        }
+        public TNode Result(List<int> sorted, int start, int end)
+        {
+            if (start > end)
+            {
+                return null;
+            }
+            int mid = (start + end) / 2;
+            TNode nodes = new TNode(sorted[mid]);
+            nodes.Left = Result(sorted, start, mid - 1);
+            nodes.Right = Result(sorted, mid + 1, end);
+            return nodes;
+        }
     }
 }
