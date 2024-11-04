@@ -161,8 +161,28 @@ namespace TreeImplementation
             Btree3.Root.Left.Left = new TNode(4);
             Btree3.Root.Left.Right = new TNode(5);
 
-            int MinimumDepth = Btree3.FindMinimumDepth(Btree3.Root); // Output: 2
-            Console.WriteLine("The Minimum Depth: " + MinimumDepth);
+            //int MinimumDepth = Btree3.FindMinimumDepth(Btree3.Root); // Output: 2
+            //Console.WriteLine("The Minimum Depth: " + MinimumDepth);
+
+            //////// Test - Diameter of Binary Tree /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            BinaryTree Btree4 = new BinaryTree();
+            Btree4.Root = new TNode(1);
+            Btree4.Root.Left = new TNode(2);
+            Btree4.Root.Right = new TNode(3);
+            Btree4.Root.Left.Left = new TNode(4);
+            Btree4.Root.Left.Right = new TNode(5);
+            Btree4.Root.Left.Right.Left = new TNode(4);
+
+            Btree3.PrintT(Btree3.Root);
+            Console.WriteLine("-------------------------------------------------------------");
+            Btree4.PrintT(Btree4.Root);
+            Console.WriteLine("-------------------------------------------------------------");
+
+            TNode t = Btree3.MergedTwoTrees(Btree3.Root , Btree4.Root);
+            Btree4.PrintT(t);
+
+
+
         }
     }
 }
