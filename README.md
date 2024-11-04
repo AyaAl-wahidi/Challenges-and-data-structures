@@ -130,6 +130,10 @@
 #### Challenge 19 : Binary Tree - Minimum Depth
 [**Go to Challenge README File**](https://github.com/AyaAl-wahidi/Challenges-and-data-structures/tree/main/Data%20Structures/Trees/TreeImplementation/TreeImplementation/MinimumDepth)
 
+---
 
+
+#### Challenge 20 : Binary Tree - Binary Tree to Binary Search Tree
+[**Go to Challenge README File**](https://github.com/AyaAl-wahidi/Challenges-and-data-structures/tree/main/Data%20Structures/Trees/TreeImplementation/TreeImplementation/BTreeToBST)
 
 
